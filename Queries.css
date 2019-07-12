@@ -1,0 +1,252 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+
+
+@font-face {
+    font-family: 'handwriting';
+    src: url('fonts/journal-webfont.woff2') format('woff2'), url('fonts/journal-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'typewriter';
+    src: url('veteran_typewriter-webfont.woff2') format('woff2'), url('veteran_typewriter-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font: 21px sans-serif;
+    padding: 2em;
+    margin: 0;
+    background: url(images/BAck1.jpg);
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('images/BAck1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+    
+    
+}
+
+form {
+    position: relative;
+    width: 740px;
+    height: 498px;
+    margin: 0 auto;
+    background: #FFF url(images/background.jpg);
+}
+
+h1 {
+    position: absolute;
+    left: 415px;
+    top: 185px;
+    font: 1em "typewriter", sans-serif;
+}
+
+#from {
+    position: absolute;
+    left: 398px;
+    top: 235px;
+}
+
+#reply {
+    position: absolute;
+    left: 390px;
+    top: 285px;
+}
+
+#message {
+    position: absolute;
+    left: 20px;
+    top: 70px;
+}
+
+label {
+    font: .8em "typewriter", sans-serif;
+}
+
+input, textarea {
+    font: .9em/1.5em "handwriting", sans-serif;
+    border: none;
+    padding: 0 10px;
+    margin: 0;
+    width: 240px;
+    background: none;
+}
+
+    input:focus, textarea:focus {
+        background: rgba(0,0,0,0);
+        border-radius: 4px;
+        outline: none;
+    }
+
+input {
+    height: 2.5em; /* for IE */
+    vertical-align: middle; /* This is optional but it makes legacy IEs look better */
+}
+
+textarea {
+    display: block;
+    padding: 10px;
+    margin: 10px 0 0 -10px;
+    width: 340px;
+    height: 360px;
+    resize: none;
+    overflow: auto;
+}
+
+button {
+  position     : absolute;
+  left         : 440px;
+  top          : 360px;
+
+  padding      : 5px;
+
+  font         : bold .6em sans-serif;
+  border       : 2px solid #333;
+  border-radius: 5px;
+  background   : none;
+
+  cursor       : pointer;
+
+-webkit-transform: rotate(-1.5deg);
+   -moz-transform: rotate(-1.5deg);
+    -ms-transform: rotate(-1.5deg);
+     -o-transform: rotate(-1.5deg);
+        transform: rotate(-1.5deg);
+}
+
+button:after {
+  content: " >>>";
+}
+
+button:hover,
+button:focus {
+  outline   : none;
+  background: #000;
+  color   : #FFF;
+}
+
+.input-query{
+    display: block;
+}
+
+.footer {
+    background-color: #000;
+    position: absolute;
+    width: 100%;
+    top: 743px;
+    height: auto;
+    margin-top: auto;
+    left:0px;
+    margin-left:0;
+    background-size: cover;
+    display: block;
+}
+
+.footer-logo, .footer-logo-1 {
+    height: 150px;
+    width: auto;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+h3 {
+    color: #58552f;
+    font-family: 'Shadows Into Light', cursive;
+    margin-left: 15%;
+    margin-top: 4%;
+    text-transform: uppercase;
+    word-spacing: 3px;
+    letter-spacing: 1px;
+    font-size: large;
+    position: relative;
+}
+
+.Social-Icons ul {
+    display: flex;
+    position: relative;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%,-50%);
+}
+
+    .Social-Icons ul li {
+        list-style: none;
+        text-align: center;
+    }
+
+        .Social-Icons ul li a {
+            width: 45px;
+            height: 45px;
+            background: #fff;
+            text-align: center;
+            align-content: center;
+            font-size: 35px;
+            line-height: 45px;
+            margin: 0 10px;
+            display: block;
+            border-radius: 50%;
+            position: relative;
+            overflow: hidden;
+            border: 3px solid #fff;
+            z-index: 1;
+        }
+
+            .Social-Icons ul li a .fa {
+                position: relative;
+                transition: .5s;
+                color: #262626;
+            }
+
+            .Social-Icons ul li a:hover .fa {
+                transform: rotateY(360deg);
+                color: #fff;
+            }
+
+            .Social-Icons ul li a:before {
+                content: '';
+                top: 100%;
+                position: absolute;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: #bf55ec;
+                transition: .5s;
+                z-index: 2;
+            }
+
+        .Social-Icons ul li:nth-child(1) a:before {
+            background: #3b5998;
+        }
+
+        .Social-Icons ul li:nth-child(2) a:before {
+            background: #e4405f;
+        }
+
+        .Social-Icons ul li:nth-child(3) a:before {
+            background: #dd4b39;
+        }
+
+        .Social-Icons ul li:nth-child(4) a:before {
+            background: #FFFC00;
+        }
+
+        .Social-Icons ul li:nth-child(5) a:before {
+            background: #0077b5;
+        }
+
+        .Social-Icons ul li:nth-child(6) a:before {
+            background: #55acee;
+        }
+
+        .Social-Icons ul li a:hover:before {
+            top: 0;
+        }

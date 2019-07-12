@@ -1,0 +1,262 @@
+*{
+	margin:0px;
+	padding:0px;
+    box-sizing: border-box;
+}
+
+header {
+    top: 0;
+    background-image: url('images/Back2.jpg');
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('images/Back2.jpg'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    padding: 0;
+    margin-top: 0;
+    overflow: hidden;
+}
+
+body {
+    font-size: 20px;
+    overflow-x: hidden;
+    color: white;
+    font-family: 'Flamenco', cursive;
+}
+
+.clearfix{
+    
+    display: block;
+    height: 0px;
+    clear: both;
+}
+
+.row{
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+.logo{
+    height: 150px;
+    width: auto;
+    float: left;
+    margin-top: 20px;
+}
+
+.main-nav{
+    float:right;
+    margin-top:60 px;
+}
+
+.main-nav li{
+    display: inline-block;
+    list-style: none;
+    margin-left: 40px;
+}
+
+.main-nav li a {
+    color: #fff;
+    padding: 5px 0;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    font-weight: 100;
+}
+
+.main-nav li a:hover {
+    border-bottom: 2px solid #bf55ec;
+}
+
+.main-content-header{
+    width: 1180px;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
+
+h1{
+    color: #fff;
+    font-size: 240%;
+    word-spacing: 5px;
+    letter-spacing: 3px;
+    margin-bottom:20px;
+    text-transform: uppercase;
+    font-weight: lighter;
+
+}
+
+.btn{
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: lighter;
+    text-decoration: none;
+    font-weight: 200px;
+    transition: background-color 0.2s, color 0.2;
+
+}
+
+.btn-full{
+    background-color: transparent;
+    color: #bf55ec;
+    margin-right: 15px;
+    border: 1px solid #bf55ec;
+}
+
+.btn-full:hover{
+    background-color: #fff;
+
+}
+
+.btn-nav{
+    background-color: transparent;
+    color: white;
+    border: 1px solid #fff;
+}
+
+.btn-nav:hover{
+    background-color: #bf55ec;
+}
+
+.colorchange{
+    animation: colorchangetravelkaro 1s infinite;
+}
+
+.animateShadow{
+    animation: reverse 1s infinite;
+}
+
+@keyframes colorchangetravelkaro {
+    0% {color:red;
+    }
+
+    25% {color:#bf55ec;
+    }
+
+    50% {color:white;
+    }
+
+    100%{color:#bf55ec;
+
+    }
+}
+
+.mobile-icon{
+    display:none;
+}
+
+.carousel{
+    display: block;
+    width: 100%;
+    
+}
+
+.prev_pic, .next_pic {
+    cursor: pointer;
+    position: absolute;
+    top: 150%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next_pic {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev_pic:hover, .next_pic:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.Gallery-name{
+    position:absolute;
+    top: 1650px;
+    color: black;
+    text-align: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-transform:uppercase;
+    color:aqua;
+    display: block;
+    width: 100%;
+
+}
+
+    .Gallery-name h1 {
+        color: black;
+        text-shadow: 2px 2px #ff0000;
+    }
+
+.Album {
+    margin: 30px;
+    border: 3px;
+    float: left;
+    margin-right: 5px;
+    height: 300px;
+    width: 450px;
+    top: 250;
+    position: relative;
+    display: inline-block;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+    .Album:hover {
+        border: 3px solid #777;
+        width: 450px;
+        height: 300px;
+        margin: 30px;
+        display: inline-block;
+    }
+
+    .Album img {
+        width: 450px;
+        height: 300px;
+        display: inline-block;
+        position: relative;
+
+
+    }
+
+.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+
+/* Footer */
+
+.footer {
+    background-color: #000;
+    position: absolute;
+    width: 100%;
+    top: 3700px;
+    height: auto;
+    margin-top: auto;
+    overflow: hidden;
+}
+
+.footer-logo, .footer-logo-1 {
+    height: 150px;
+    width: auto;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.footer h1 {
+    color: #58552f;
+    font-family: 'Shadows Into Light', cursive;
+    margin-left: 15%;
+    margin-top: 2%;
+    text-transform: uppercase;
+    word-spacing: 3px;
+    letter-spacing: 2px;
+    font-size: x-large;
+    position: relative;
+    margin-right: 70%;
+
