@@ -17,4 +17,3 @@ function change_slide(x) {
     document.getElementById('slider').src = links[index];
 }
 
-
