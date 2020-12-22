@@ -1,342 +1,353 @@
 <!DOCTYPE HTML>
 <html lang="en">
+
 <head>
-    <title>TravelKaro</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="main.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Flamenco" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <title>TravelKaro</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="main.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Flamenco" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 <body>
 
-    <header>
-        <nav>
-            <div class="row clearfix">
-                <img src="Images/logo/output-onlinepngtools.png" class="logo">
+  <header>
+    <nav>
+      <div class="row clearfix">
+        <img src="Images/logo/output-onlinepngtools.png" class="logo">
 
-                <ul class="main-nav animated slideInDown">
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="Query.html">Queries</a></li>
-                    <li><a href="#Name">Gallery</a></li>
-                    <li><a href="Bookings.html">Bookings</a></li>
-                    <li><a href="#foot">Contact Us</a></li>
-                </ul>
-                <a href="#" class="mobile-icon" id="check-class" onclick="slideshow()">
-                    <i class="fa fa-bars"></i>
-                </a>
+        <ul class="main-nav animated slideInDown">
+          <li><a href="#">HOME</a></li>
+          <li><a href="Query.html">Queries</a></li>
+          <li><a href="#Name">Gallery</a></li>
+          <li><a href="Bookings.html">Bookings</a></li>
+          <li><a href="#foot">Contact Us</a></li>
+        </ul>
+        <a href="#" class="mobile-icon" id="check-class" onclick="slideshow()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    </nav>
+
+    <div class="main-content-header">
+      <h1>
+        Welcome to <span class="colorchange">Travelkaro</span>.<br />
+        Get, Set, Travel.
+      </h1>
+      <a href="#Gallery" class="btn btn-full">Domestic Trips</a>
+      <a href="#Gallery" class="btn btn-nav">International Trips</a>
+    </div>
+  </header>
+
+  <div class="Carousel" id="Gallery">
+    <a class="prev_pic" onclick="change_slide(-1)">&#10094;</a>
+    <img id="slider" src="images/2.jpg" height="800px" width="100%" />
+    <a class="next_pic" onclick="change_slide(1)">&#10095;</a>
+  </div>
+
+  <div class="Gallery-name" id="Name">
+    <span class="animateShadow">
+      <h1>Gallery</h1>
+    </span>
+  </div>
+  <hr />
+
+  <div class="full-album" id="FullGallery">
+
+    <div class="Album">
+      <a target="_blank" href="images/album/1.jpg">
+        <figure class="snip0019">
+          <img src="images/album/1.jpg" alt="Cinque Terre">
+          <figcaption>
+            <div class="desc">
+              <h2>Want to travel to<br /><span>Mizoram?</span> </h2>
             </div>
-        </nav>
-
-        <div class="main-content-header">
-            <h1>
-                Welcome to <span class="colorchange">Travelkaro</span>.<br />
-                Get, Set, Travel.
-            </h1>
-            <a href="#Gallery" class="btn btn-full">Domestic Trips</a>
-            <a href="#Gallery" class="btn btn-nav">International Trips</a>
-        </div>
-    </header>
-
-    <div class="Carousel" id="Gallery">
-        <a class="prev_pic" onclick="change_slide(-1)">&#10094;</a>
-        <img id="slider" src="images/2.jpg" height="800px" width="100%" />
-        <a class="next_pic" onclick="change_slide(1)">&#10095;</a>
-    </div>
-
-    <div class="Gallery-name" id="Name">
-        <span class="animateShadow"><h1>Gallery</h1></span>
-    </div>
-    <hr />
-
-    <div class="full-album" id="FullGallery">
-
-        <div class="Album">
-            <a target="_blank" href="images/album/1.jpg">
-                <figure class="snip0019">
-                    <img src="images/album/1.jpg" alt="Cinque Terre">
-                    <figcaption>
-                        <div class="desc">
-                            <h2>Want to travel to<br /><span>Mizoram?</span> </h2>
-                        </div>
-                        <div>
-                            <p>This is the land of the Highlanders,or the Mezos.It is a mountainous state nestling in the southern tip of the north-east region of India.</p>
-                        </div>
-                    </figcaption>
-                </figure>
-            </a>
-        </div>
-
-        <div class="Album">
-            <a target="_blank" href="images/album/2.jpg">
-                <figure class="snip0019">
-                    <img src="images/album/2.jpg" alt="Forest">
-                    <figcaption>
-                        <div class="desc">
-                            <h2>Want to travel to<br /><span>Meghalya?</span></h2>
-                        </div>
-                        <div>
-                            <p>Meghalya is one of the most beautiful states in the North-East India.</p>
-                        </div>
-                    </figcaption>
-                </figure>
-            </a>
-        </div>
-
-        <div class="Album">
-            <a target="_blank" href="images/album/3.jpg">
-                <figure class="snip0019">
-                    <img src="images/album/3.jpg" alt="Northern Lights">
-                    <figcaption>
-                        <div>
-                            <h2>Want to travel to<br /><span>Himalyas?</span></h2>
-                        </div>
-                        <div>
-                            <p>Tourism in the Himalayas, thus, is wonderful experience. Climbing Himalayas is on every mountaineer's bucket list and reaching majestic heights has never been easier.</p>
-                        </div>
-                    </figcaption>
-                </figure>
-            </a>
-        </div>
-
-        <div class="Album">
-            <a target="_blank" href="images/album/4.jpg">
-                <figure class="snip0019">
-                    <img src="images/album/4.jpg" alt="Mountains">
-                    <figcaption>
-                        <div>
-                            <h2>Want to travel to<br /><span>Jaisalmer?</span></h2>
-                        </div>
-                        <div>
-                            <p>Jaisalmer Tourism Unlike any other city, this desert fortress is one of Rajasthan's most exotic and unusual towns.</p>
-                        </div>
-                    </figcaption>
-                </figure>
-            </a>
-        </div>
-
-        <div class="Album">
-            <a target="_blank" href="images/album/5.jpg">
-                <figure class="snip0019">
-                    <img src="images/album/5.jpg" alt="Mountains">
-                    <figcaption>
-                        <div>
-                            <h2>Want to travel to<br /><span>Hong Kong?</span></h2>
-                        </div>
-                        <div>
-                            <p>Hong Kong welcomes with an iconic skyline, a legendary kitchen, and lush, protected nature where rare birds and colourful traditions thrive..</p>
-                        </div>
-                    </figcaption>
-                </figure>
-            </a>
-        </div>
-
-        <div class="Album">
-            <a target="_blank" href="images/album/6.jpg">
-                <figure class="snip0019">
-                    <img src="images/album/6.jpg" alt="Mountains">
-                    <figcaption>
-                        <div>
-                            <h2>Want to travel to<br /><span>Kasol?</span></h2>
-                        </div>
-                        <div>
-                            <p>Rave party in Kasol contains all three mentioned below:<br />Lots of booze, smoke, and fun.</p>
-                        </div>
-                    </figcaption>
-                </figure>
-            </a>
-        </div>
-
-        <div class="Album">
-            <a target="_blank" href="images/album/7.jpg">
-                <figure class="snip0019">
-                    <img src="images/album/7.jpg" alt="Mountains">
-                    <figcaption>
-                        <div>
-                            <h2>Want to travel to<br /><span>Ladakh?</span></h2>
-                        </div>
-                        <div>
-                            <p>Ladakh - The adventure capital of the country, is the destination that has the top three highest mountain passes in the world.</p>
-                        </div>
-                    </figcaption>
-                </figure>
-            </a>
-        </div>
-
-        <div class="Album">
-            <a target="_blank" href="images/album/8.jpg">
-                <figure class="snip0019">
-                    <img src="images/album/8.jpg" alt="Mountains">
-                    <figcaption>
-                        <div>
-                            <h2>Want to travel to<br /><span>Chandrashila?</span></h2>
-                        </div>
-                        <div>
-                            <p>Chandrashilla Trek - Quest for the Moon Rock. However, it is one of the popular treks of Uttarakhand.</p>
-                        </div>
-                    </figcaption>
-                </figure>
-            </a>
-        </div>
-
-        <div class="Album">
-            <a target="_blank" href="images/album/13.jpg">
-                <figure class="snip0019">
-                    <img src="images/album/13.jpg" alt="Mountains">
-                    <figcaption>
-                        <div>
-                            <h2>Want to travel to<br /><span>Poland?</span></h2>
-                        </div>
-                        <div>
-                            <p>Poland’s roots go back to the turn of the first millennium, leaving a thousand years of twists and turns and kings and castles to explore.</p>
-                        </div>
-                    </figcaption>
-                </figure>
-            </a>
-        </div>
-
-        <div class="Album">
-            <a target="_blank" href="images/album/14.jpg">
-                <figure class="snip0019">
-                    <img src="images/album/14.jpg" alt="Mountains">
-                    <figcaption>
-                        <div>
-                            <h2>Want to travel to<br /><span>Greenland?</span></h2>
-                        </div>
-                        <div>
-                            <p>Greenland is not a cheap destination, but few places combine such magnificent scenery, such clarity of light and such raw power of nature.</p>
-                        </div>
-                    </figcaption>
-                </figure>
-            </a>
-        </div>
-
-        <div class="Album">
-            <a target="_blank" href="images/album/15.jpg">
-                <figure class="snip0019">
-                    <img src="images/album/15.jpg" alt="Mountains">
-                    <figcaption>
-                        <div>
-                            <h2>Want to travel to<br /><span>China?</span></h2>
-                        </div>
-                        <div>
-                            <p>China boasts a large number of wonderful attractions including antique sites and relics, imposing imperial palaces.</p>
-                        </div>
-                    </figcaption>
-                </figure>
-            </a>
-        </div>
-
-        <div class="Album">
-            <a target="_blank" href="images/album/19.jpg">
-                <figure class="snip0019">
-                    <img src="images/album/19.jpg" alt="Mountains">
-                    <figcaption>
-                        <div>
-                            <h2>Want to travel to<br /><span>Dubai?</span></h2>
-                        </div>
-                        <div>
-                            <p>Dubai, United Arab Emirates. Dubai is a destination that mixes modern culture with history, adventure with world-class shopping and entertainment.</p>
-                        </div>
-                    </figcaption>
-                </figure>
-            </a>
-        </div>
-
-        <div class="Album">
-            <a target="_blank" href="images/album/16.jpg">
-                <figure class="snip0019">
-                    <img src="images/album/16.jpg" alt="Mountains">
-                    <figcaption>
-                        <div>
-                            <h2>Want to travel to<br /><span>Paris?</span></h2>
-                        </div>
-                        <div>
-                            <p>Paris, the City of Light, is filled with thousands of hotels, attractions, shops, and restaurants.</p>
-                        </div>
-                    </figcaption>
-                </figure>
-            </a>
-        </div>
-
-        <div class="Album">
-            <a target="_blank" href="images/album/17.jpg">
-                <figure class="snip0019">
-                    <img src="images/album/17.jpg" alt="Mountains">
-                    <figcaption>
-                        <div>
-                            <h2>Want to travel to<br /><span>Amritsar?</span></h2>
-                        </div>
-                        <div>
-                            <p>Amritsar is the spiritual and cultural centre of the Sikh Religion, also famous for Jallian Wala Bagh-massacare.</p>
-                        </div>
-                    </figcaption>
-                </figure>
-            </a>
-        </div>
-
-        <div class="Album">
-            <a target="_blank" href="images/album/18.jpg">
-                <figure class="snip0019">
-                    <img src="images/album/18.jpg" alt="Mountains">
-                    <figcaption>
-                        <div>
-                            <h2>Want to travel to<br /><span>Delhi?</span></h2>
-                        </div>
-                        <div>
-                            <p>New Delhi is all at once chaotic and calm, a complicated city where cows often wander the shanty-lined streets.</p>
-                        </div>
-                    </figcaption>
-                </figure>
-            </a>
-        </div>
-
-    </div>
-
- 
-
-
-
-
-
-
-    <div class="footer" id="foot">
-
-        <div class="footer-left">
-
-            <a href="Index.html"><img src="Images/logo/output-onlinepngtools.png" align="left" class="footer-logo"></a>
-            <a href="Index.html"><img src="Images/logo/output-onlinepngtools.png" align="right" class="footer-logo-1"></a>
-            <h1>TravelKaro</h1><br /><h3>Abhinav<br />Roll No. 1710991029<br />Chitkara University,<br>Rajpura-143401<br />+91-9592800877</h3>
-            <div class="Social-Icons">
-                <ul>
-                    <li><a href="https://www.facebook.com/technoxpert0077"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                    <li><a href="https://www.instagram.com/abhinav__aggarwal/?utm_source=ig_profile_share&igshid=1jy6e5pjdt1g7"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                    <li><a href="#"><i class="fa fa-google" aria-hidden="true"></i></a></li>
-                    <li><a href="#"><i class="fa fa-snapchat-ghost" aria-hidden="true"></i></a></li>
-                    <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                    <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                </ul>
+            <div>
+              <p>This is the land of the Highlanders,or the Mezos.It is a mountainous state nestling in the southern tip
+                of the north-east region of India.</p>
             </div>
-
-        </div>
-
-
-
+          </figcaption>
+        </figure>
+      </a>
     </div>
 
-    <script type="text/javascript">
-        function slideshow() {
-            var x = document.getElementById('check-class');
-            if (x.style.display === "none") {
-                x.display = "block";
-            } else {
-                x.display = "none";
-            }
-        }
-    </script>
+    <div class="Album">
+      <a target="_blank" href="images/album/2.jpg">
+        <figure class="snip0019">
+          <img src="images/album/2.jpg" alt="Forest">
+          <figcaption>
+            <div class="desc">
+              <h2>Want to travel to<br /><span>Meghalya?</span></h2>
+            </div>
+            <div>
+              <p>Meghalya is one of the most beautiful states in the North-East India.</p>
+            </div>
+          </figcaption>
+        </figure>
+      </a>
+    </div>
 
+    <div class="Album">
+      <a target="_blank" href="images/album/3.jpg">
+        <figure class="snip0019">
+          <img src="images/album/3.jpg" alt="Northern Lights">
+          <figcaption>
+            <div>
+              <h2>Want to travel to<br /><span>Himalyas?</span></h2>
+            </div>
+            <div>
+              <p>Tourism in the Himalayas, thus, is wonderful experience. Climbing Himalayas is on every mountaineer's
+                bucket list and reaching majestic heights has never been easier.</p>
+            </div>
+          </figcaption>
+        </figure>
+      </a>
+    </div>
+
+    <div class="Album">
+      <a target="_blank" href="images/album/4.jpg">
+        <figure class="snip0019">
+          <img src="images/album/4.jpg" alt="Mountains">
+          <figcaption>
+            <div>
+              <h2>Want to travel to<br /><span>Jaisalmer?</span></h2>
+            </div>
+            <div>
+              <p>Jaisalmer Tourism Unlike any other city, this desert fortress is one of Rajasthan's most exotic and
+                unusual towns.</p>
+            </div>
+          </figcaption>
+        </figure>
+      </a>
+    </div>
+
+    <div class="Album">
+      <a target="_blank" href="images/album/5.jpg">
+        <figure class="snip0019">
+          <img src="images/album/5.jpg" alt="Mountains">
+          <figcaption>
+            <div>
+              <h2>Want to travel to<br /><span>Hong Kong?</span></h2>
+            </div>
+            <div>
+              <p>Hong Kong welcomes with an iconic skyline, a legendary kitchen, and lush, protected nature where rare
+                birds and colourful traditions thrive..</p>
+            </div>
+          </figcaption>
+        </figure>
+      </a>
+    </div>
+
+    <div class="Album">
+      <a target="_blank" href="images/album/6.jpg">
+        <figure class="snip0019">
+          <img src="images/album/6.jpg" alt="Mountains">
+          <figcaption>
+            <div>
+              <h2>Want to travel to<br /><span>Kasol?</span></h2>
+            </div>
+            <div>
+              <p>Rave party in Kasol contains all three mentioned below:<br />Lots of booze, smoke, and fun.</p>
+            </div>
+          </figcaption>
+        </figure>
+      </a>
+    </div>
+
+    <div class="Album">
+      <a target="_blank" href="images/album/7.jpg">
+        <figure class="snip0019">
+          <img src="images/album/7.jpg" alt="Mountains">
+          <figcaption>
+            <div>
+              <h2>Want to travel to<br /><span>Ladakh?</span></h2>
+            </div>
+            <div>
+              <p>Ladakh - The adventure capital of the country, is the destination that has the top three highest
+                mountain passes in the world.</p>
+            </div>
+          </figcaption>
+        </figure>
+      </a>
+    </div>
+
+    <div class="Album">
+      <a target="_blank" href="images/album/8.jpg">
+        <figure class="snip0019">
+          <img src="images/album/8.jpg" alt="Mountains">
+          <figcaption>
+            <div>
+              <h2>Want to travel to<br /><span>Chandrashila?</span></h2>
+            </div>
+            <div>
+              <p>Chandrashilla Trek - Quest for the Moon Rock. However, it is one of the popular treks of Uttarakhand.
+              </p>
+            </div>
+          </figcaption>
+        </figure>
+      </a>
+    </div>
+
+    <div class="Album">
+      <a target="_blank" href="images/album/13.jpg">
+        <figure class="snip0019">
+          <img src="images/album/13.jpg" alt="Mountains">
+          <figcaption>
+            <div>
+              <h2>Want to travel to<br /><span>Poland?</span></h2>
+            </div>
+            <div>
+              <p>Poland’s roots go back to the turn of the first millennium, leaving a thousand years of twists and
+                turns and kings and castles to explore.</p>
+            </div>
+          </figcaption>
+        </figure>
+      </a>
+    </div>
+
+    <div class="Album">
+      <a target="_blank" href="images/album/14.jpg">
+        <figure class="snip0019">
+          <img src="images/album/14.jpg" alt="Mountains">
+          <figcaption>
+            <div>
+              <h2>Want to travel to<br /><span>Greenland?</span></h2>
+            </div>
+            <div>
+              <p>Greenland is not a cheap destination, but few places combine such magnificent scenery, such clarity of
+                light and such raw power of nature.</p>
+            </div>
+          </figcaption>
+        </figure>
+      </a>
+    </div>
+
+    <div class="Album">
+      <a target="_blank" href="images/album/15.jpg">
+        <figure class="snip0019">
+          <img src="images/album/15.jpg" alt="Mountains">
+          <figcaption>
+            <div>
+              <h2>Want to travel to<br /><span>China?</span></h2>
+            </div>
+            <div>
+              <p>China boasts a large number of wonderful attractions including antique sites and relics, imposing
+                imperial palaces.</p>
+            </div>
+          </figcaption>
+        </figure>
+      </a>
+    </div>
+
+    <div class="Album">
+      <a target="_blank" href="images/album/19.jpg">
+        <figure class="snip0019">
+          <img src="images/album/19.jpg" alt="Mountains">
+          <figcaption>
+            <div>
+              <h2>Want to travel to<br /><span>Dubai?</span></h2>
+            </div>
+            <div>
+              <p>Dubai, United Arab Emirates. Dubai is a destination that mixes modern culture with history, adventure
+                with world-class shopping and entertainment.</p>
+            </div>
+          </figcaption>
+        </figure>
+      </a>
+    </div>
+
+    <div class="Album">
+      <a target="_blank" href="images/album/16.jpg">
+        <figure class="snip0019">
+          <img src="images/album/16.jpg" alt="Mountains">
+          <figcaption>
+            <div>
+              <h2>Want to travel to<br /><span>Paris?</span></h2>
+            </div>
+            <div>
+              <p>Paris, the City of Light, is filled with thousands of hotels, attractions, shops, and restaurants.</p>
+            </div>
+          </figcaption>
+        </figure>
+      </a>
+    </div>
+
+    <div class="Album">
+      <a target="_blank" href="images/album/17.jpg">
+        <figure class="snip0019">
+          <img src="images/album/17.jpg" alt="Mountains">
+          <figcaption>
+            <div>
+              <h2>Want to travel to<br /><span>Amritsar?</span></h2>
+            </div>
+            <div>
+              <p>Amritsar is the spiritual and cultural centre of the Sikh Religion, also famous for Jallian Wala
+                Bagh-massacare.</p>
+            </div>
+          </figcaption>
+        </figure>
+      </a>
+    </div>
+
+    <div class="Album">
+      <a target="_blank" href="images/album/18.jpg">
+        <figure class="snip0019">
+          <img src="images/album/18.jpg" alt="Mountains">
+          <figcaption>
+            <div>
+              <h2>Want to travel to<br /><span>Delhi?</span></h2>
+            </div>
+            <div>
+              <p>New Delhi is all at once chaotic and calm, a complicated city where cows often wander the shanty-lined
+                streets.</p>
+            </div>
+          </figcaption>
+        </figure>
+      </a>
+    </div>
+  </div>
+
+  <div class="footer row mx-0" id="foot">
+    <div class="footer-left col-6 py-3">
+      <div class="d-inline-block top-20 position-absolute"><a href="Index.html"><img src="Images/logo/output-onlinepngtools.png" class="footer-logo"></a></div>
+      <div class="d-inline-block position-relative left-20">
+        <h1>TravelKaro</h1>
+        <h3>Abhinav<br />Roll No. 1710991029<br />Chitkara University,<br>Rajpura-143401<br />+91-9592800877</h3>
+      </div>
+    </div>
+    <div class="footer-right col-6 text-center">
+      <div class="Social-Icons d-inline-block justify-content-center mt-5">
+        <ul>
+          <li><a href="https://www.facebook.com/technoxpert0077"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+          </li>
+          <li><a href="https://www.instagram.com/abhinav__aggarwal/?utm_source=ig_profile_share&igshid=1jy6e5pjdt1g7"><i
+                class="fa fa-instagram" aria-hidden="true"></i></a></li>
+          <li><a href="mailto:aggarwalabhi1470@gmail.com"><i class="fa fa-google-plus-square" aria-hidden="true"></i></a></li>
+          <li><a href="#"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+          <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript">
+    function slideshow() {
+      var x = document.getElementById('check-class');
+      if (x.style.display === "none") {
+        x.display = "block";
+      } else {
+        x.display = "none";
+      }
+    }
+  </script>
 
 </body>
+
 </html>
